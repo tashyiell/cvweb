@@ -1,0 +1,346 @@
+﻿body {
+    background-attachment: fixed;
+    background-repeat: no-repeat repeat;
+    font-family: 'Times New Roman', Times, serif;
+    opacity: 30;
+}
+
+.sidebar {
+    height: 1800px;
+    width: 200px;
+    position: fixed;
+    top: 0;
+    left: 0;
+    background-color: rosybrown;
+    background-repeat: inherit;
+    padding-top: 30px;
+    transition: ease-in;
+}
+
+.content::file-selector-button {
+    display: inline-block;
+    color: #252537;
+    width: 280px;
+    height: 50px;
+    padding: 0 20px;
+    background: #fff;
+    border-radius: 5px;
+    outline: none;
+    border: none;
+    cursor: pointer;
+    text-align: center;
+    transition: all 0.2s linear;
+    margin: 7% auto;
+    letter-spacing: 0.05em;
+}
+
+.sidebar ul {
+    list-style-type: persian;
+    padding: 5px;
+}
+
+    .sidebar ul li {
+        padding: 16px 16px;
+    }
+
+        .sidebar ul li a {
+            text-decoration: blink;
+            color: blue;
+            display: block;
+            font: bold;
+        }
+
+            .sidebar ul li a:hover {
+                background-color: blue;
+                color: aqua;
+            }
+
+            .sidebar ul li a:hover {
+                background-color: #0ff;
+            }
+
+            .sidebar ul li a:link {
+                display: revert;
+                padding: 1px 4px;
+                background-color: black;
+                color: white;
+                text-decoration: auto;
+                font: bold 100px;
+                border-radius: 4px;
+                border: outset;
+                cursor: pointer;
+            }
+
+
+
+
+@media screen and (max-width : 1000px) {
+
+    .sidebar {
+        width: 100%;
+        height: max-content;
+        position: relative;
+    }
+
+        .sidebar ul {
+            margin-block: 4px,7px;
+        }
+
+    .content {
+        margin-top: 0;
+    }
+}
+
+
+.container {
+    width: 1100px;
+    margin: 0 auto;
+    border: solid;
+    border-block-color: black;
+}
+
+@keyframes bounce {
+
+    0%, 100% {
+        transform: scale(2.2);
+    }
+
+    50% {
+        transform: scale(2.6);
+    }
+}
+
+.emoji {
+    font-size: 3rem;
+    animation: bounce 2s ease-in-out infinite;
+    display: flex;
+}
+
+body, html {
+    height: 100%;
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+.cv-container {
+    width: 80%;
+    max-width: 800px;
+    margin: 20px auto;
+    background-color: #808080;
+    border-radius: 8px;
+    overflow: hidden;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.cv-table {
+    width: 100%;
+    height: 100%;
+    border-collapse: collapse;
+}
+
+    .cv-table th,
+    .cv-table td {
+        padding: 20px;
+        border: 1px solid #00ff28;
+        border-radius: 5px 5px;
+    }
+
+    .cv-table th {
+        background-color: #f2f2f2;
+        text-align: left;
+    }
+
+    .cv-table tr:nth-child(even) {
+        background-color: darkslategrey;
+    }
+
+    .cv-table ul {
+        list-style-type: disc;
+        margin: 0;
+        padding-left: 20px;
+    }
+
+body {
+    margin: 0;
+    overflow: hidden;
+}
+
+.bubble-container {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    pointer-events: none; /* Prevents interaction with bubbles */
+    overflow: hidden;
+}
+
+.bubble {
+    position: absolute;
+    bottom: -150px; /* Start position below the visible area */
+    border-radius: 50%;
+    background-color: rgba(255, 255, 255, 0.7);
+    opacity: 0.9;
+    pointer-events: none; /* Prevents interaction with bubbles */
+}
+
+@keyframes bubble-rise {
+    0% {
+        transform: translateY(0) scale(1);
+        opacity: 0.9;
+    }
+
+    100% {
+        transform: translateY(-1000px) scale(0);
+        opacity: 0;
+    }
+}
+
+/* Create multiple bubbles with different sizes and timings */
+.bubble:nth-child(1) {
+    width: 40px;
+    height: 40px;
+    left: 10%;
+    animation: bubble-rise 10s infinite;
+}
+
+.bubble:nth-child(2) {
+    width: 30px;
+    height: 30px;
+    left: 30%;
+    animation: bubble-rise 12s infinite;
+}
+
+.bubble:nth-child(3) {
+    width: 50px;
+    height: 50px;
+    left: 50%;
+    animation: bubble-rise 15s infinite;
+}
+
+.bubble:nth-child(4) {
+    width: 35px;
+    height: 35px;
+    left: 70%;
+    animation: bubble-rise 11s infinite;
+}
+
+.bubble:nth-child(5) {
+    width: 40px;
+    height: 40px;
+    left: 10%;
+    animation: bubble-rise 16s infinite;
+}
+
+.bubble:nth-child(6) {
+    width: 30px;
+    height: 30px;
+    left: 30%;
+    animation: bubble-rise 18s infinite;
+}
+
+.bubble:nth-child(7) {
+    width: 50px;
+    height: 50px;
+    left: 50%;
+    animation: bubble-rise 9s infinite;
+}
+
+.bubble:nth-child(8) {
+    width: 35px;
+    height: 35px;
+    left: 70%;
+    animation: bubble-rise 14s infinite;
+}
+
+.bubble:nth-child(9) {
+    width: 40px;
+    height: 40px;
+    left: 15%;
+    animation: bubble-rise 20s infinite;
+}
+
+.bubble:nth-child(10) {
+    width: 30px;
+    height: 30px;
+    left: 35%;
+    animation: bubble-rise 17s infinite;
+}
+
+.bubble:nth-child(11) {
+    width: 50px;
+    height: 50px;
+    left: 55%;
+    animation: bubble-rise 13s infinite;
+}
+
+.bubble:nth-child(12) {
+    width: 35px;
+    height: 35px;
+    left: 75%;
+    animation: bubble-rise 11s infinite;
+}
+
+.content {
+    font-display: auto;
+    font-size: 20px;
+    text-align: revert;
+}
+
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body, html {
+    height: 100%;
+}
+
+body {
+    position: relative;
+    overflow: hidden; /* Prevents scrollbars */
+}
+
+    body::before {
+        content: "";
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background: url('VID-20241007-WA0028.mp4.mp4') no-repeat center center fixed; /* Fallback */
+        background-size: cover;
+        z-index: -1; /* Places behind content */
+    }
+
+    /* Fallback for non-supporting browsers */
+    body::before {
+        background-color: rgba(0, 0, 0, 0.5); /* Optional fallback color */
+    }
+
+.content {
+    position: relative;
+    z-index: 1; /* Ensures content is above the video */
+    color: white; /* Change as needed */
+    text-align: center;
+    padding: 20px;
+}
+
+.video-background {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+    z-index: -1; /* Ensures the video stays behind other content */
+}

@@ -1,0 +1,106 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <style>
+        body {
+            font-family: Arial, Helvetica, sans-serif;
+            background-color: ThreeDDarkShadow;
+        }
+
+        * {
+            box-sizing: content-box;
+        }
+
+        /* Add padding to containers */
+        .container {
+            padding: 10px;
+            background-image: conic-gradient(darkblue,threeddarkshadow);
+        }
+
+        /* Full-width input fields */
+        input[type=text], input[type=password] {
+            width: 30%;
+            padding: 15px;
+            margin: 10px 350px;
+            display: inline-block;
+            border-radius: 8px;
+            background-color: ThreeDDarkShadow;
+        }
+
+
+
+            input[type=text]:focus, input[type=password]:focus {
+                background-color: lime;
+                outline: thin;
+            }
+
+        /* Overwrite default styles of hr */
+        hr {
+            border: 1px outset lime;
+            margin-bottom: 25px;
+        }
+
+        /* Set a style for the submit button */
+        .registerbtn {
+            background-color: lime;
+            color: black;
+            padding: 16px 20px;
+            margin: 10px 350px;
+            border-radius: 8px;
+            cursor: pointer;
+            width: 30%;
+            opacity: 0.9;
+            display: revert;
+        }
+
+            .registerbtn:hover {
+                opacity: 5;
+                background-color: aqua;
+            }
+
+        /* Add a blue text color to links */
+        a {
+            color: lime;
+        }
+
+            a :hover {
+                background-color: aqua;
+            }
+        /* Set a grey background color and center the text of the "sign in" section */
+        .signin {
+            background-image: conic-gradient(darkblue,threeddarkshadow);
+            text-align: justify;
+        }
+    </style>
+</head>
+<body>
+
+    <form action="/action_page.php">
+        <div class="container">
+            <h1 style="color:lime;">Register</h1>
+            <p style="color:lime;">Please fill in this form to create an account.</p>
+            <hr>
+
+            <label for="cellphone number"><b style="color:lime;">cellphone number</b></label>
+            <input type="tel" placeholder="Enter number" name="cellphone number" id="cellphone nunmber" required><br />
+
+            <label for="psw"><b></b></label>
+            <input type="password" placeholder="Enter Password" name="psw" id="psw" required>
+
+
+            <label for="psw-repeat"><b style="color:lime;">Repeat Password</b></label> <br />
+            <input type="password" placeholder="Repeat Password" name="psw-repeat" id="psw-repeat" required>
+            <hr>
+            <p style="color:lime;">By creating an account you agree to our <a href="#">Terms & Privacy</a>.</p>
+
+            <button type="submit" class="registerbtn">Register</button>
+        </div>
+
+        <div class="container signin">
+            <p style="color:white;">Already have an account? <a href="#">Sign in</a>.</p>
+        </div>
+    </form>
+    <script src="ScriptCVregister.js"></script>
+</body>
+</html>
